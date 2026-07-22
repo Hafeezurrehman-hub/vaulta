@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --vaulta-primary: #3E5C54;
+    --vaulta-gold: #DDA15E;
+    --vaulta-income: #6B8E4E;
+    --vaulta-expense: #BC6C25;
+    --vaulta-cream: #FDFCF9;
+    --vaulta-border: #F2F1EC;
+    --vaulta-dark: #1B2623;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FDFCF9;
+    color: #1B2623;
+  }
+
+  .dark body {
+    background-color: #1B2623;
+    color: #E9EDC9;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: rgba(253, 252, 249, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-panel {
+  background: rgba(27, 38, 35, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3E5C54;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(13, 66, 52, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.35); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}

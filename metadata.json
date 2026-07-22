@@ -1,0 +1,6 @@
+{
+  "name": "Vaulta",
+  "description": "A modern, beautiful, fully functional, and installable personal budgeting and expense management application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
