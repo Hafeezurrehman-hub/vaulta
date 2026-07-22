@@ -23,7 +23,7 @@ export function renderNavbar(): string {
         <!-- Left: Logo & Mobile Title -->
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
           <div class="flex items-center gap-2 sm:gap-2.5 cursor-pointer" id="nav-brand-logo">
-            <img src="/vaulta-logo.jpg" alt="Vaulta Logo" class="w-9 h-9 sm:w-10 sm:h-10 object-cover shrink-0 aspect-square rounded-xl shadow-sm border border-[#3E5C54]/20 bg-white" />
+            <img src="${import.meta.env.BASE_URL}vaulta-logo.jpg" alt="Vaulta Logo" class="w-9 h-9 sm:w-10 sm:h-10 object-cover shrink-0 aspect-square rounded-xl shadow-sm border border-[#3E5C54]/20 bg-white" />
             <div class="hidden sm:block">
               <span class="font-heading font-extrabold text-xl tracking-tight text-[#3E5C54] dark:text-[#E9EDC9]">VAULTA</span>
               <span class="block text-[10px] tracking-widest text-[#BC6C25] dark:text-[#DDA15E] font-bold uppercase -mt-1">Budgeting</span>

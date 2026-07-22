@@ -44,7 +44,7 @@ export function showPWABanner(): void {
 
         <!-- Banner Header with Vaulta Logo -->
         <div class="flex items-center gap-4 mb-4">
-          <img src="/vaulta-logo.jpg" alt="Vaulta App Icon" class="w-14 h-14 rounded-2xl shadow-md border border-[#3E5C54]/20 object-cover shrink-0 aspect-square bg-white" />
+          <img src="${import.meta.env.BASE_URL}vaulta-logo.jpg" alt="Vaulta App Icon" class="w-14 h-14 rounded-2xl shadow-md border border-[#3E5C54]/20 object-cover shrink-0 aspect-square bg-white" />
           <div>
             <span class="inline-block px-2.5 py-0.5 bg-[#3E5C54]/10 text-[#3E5C54] dark:text-[#E9EDC9] font-bold text-[10px] uppercase tracking-wider rounded-md mb-1">
               Official PWA App

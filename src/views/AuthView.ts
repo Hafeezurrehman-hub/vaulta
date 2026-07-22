@@ -13,7 +13,7 @@ export function renderAuthView(): string {
 
         <!-- Header with Vaulta Logo -->
         <div class="text-center mb-6">
-          <img src="/vaulta-logo.jpg" alt="Vaulta Brand Logo" class="w-20 h-20 mx-auto object-cover shrink-0 aspect-square bg-white rounded-2xl shadow-md border border-[#DDA15E]/40 mb-3" />
+          <img src="${import.meta.env.BASE_URL}vaulta-logo.jpg" alt="Vaulta Brand Logo" class="w-20 h-20 mx-auto object-cover shrink-0 aspect-square bg-white rounded-2xl shadow-md border border-[#DDA15E]/40 mb-3" />
           <h1 class="font-heading font-extrabold text-2xl text-[#1B2623] dark:text-[#E9EDC9] tracking-tight">
             ${isSignUpMode ? 'Create Vaulta Account' : 'Welcome to Vaulta'}
           </h1>

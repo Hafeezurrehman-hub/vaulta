@@ -1,11 +1,11 @@
 const CACHE_NAME = 'vaulta-app-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/vaulta-logo.jpg',
-  '/pwa-icon-192.png',
-  '/pwa-icon-512.png',
-  '/manifest.json'
+  '/vaulta/',
+  '/vaulta/index.html',
+  '/vaulta/vaulta-logo.jpg',
+  '/vaulta/pwa-icon-192.png',
+  '/vaulta/pwa-icon-512.png',
+  '/vaulta/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {

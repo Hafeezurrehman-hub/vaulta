@@ -12,8 +12,8 @@ import { renderAccountsView, bindAccountsEvents } from './views/AccountsView';
 import { renderSettingsView, bindSettingsEvents } from './views/SettingsView';
 import { initPWAInstallListener } from './components/PWAInstallModal';
 
-// Register Service Worker for PWA
-if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+// Register Service Worker for PWA (production only — avoids stale cache issues in dev)
+if (import.meta.env.PROD && 'serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
       .register('/sw.js')
@@ -76,7 +76,7 @@ function renderApp(): void {
       ${renderSidebar()}
 
       <!-- Main Content Area -->
-      <main id="main-content" class="flex-1 p-4 sm:p-6 overflow-y-auto flex flex-col justify-between">
+      <main id="main-content" class="flex-1 p-4 sm:p-6 pb-24 md:pb-6 overflow-y-auto flex flex-col justify-between">
         <div>
           ${viewContentHtml}
         </div>

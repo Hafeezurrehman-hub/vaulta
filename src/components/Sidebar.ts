@@ -28,7 +28,7 @@ export function renderSidebar(): string {
       <!-- Vaulta Brand Header in Sidebar -->
       <div class="px-3 py-3 mb-4 rounded-2xl bg-[#ffffff0a] border border-[#ffffff15] text-white shadow-sm relative overflow-hidden group">
         <div class="flex items-center gap-3 relative z-10">
-          <img src="/vaulta-logo.jpg" alt="Vaulta Logo" class="w-10 h-10 object-cover shrink-0 aspect-square bg-white rounded-xl shadow border border-[#DDA15E]/30" />
+          <img src="${import.meta.env.BASE_URL}vaulta-logo.jpg" alt="Vaulta Logo" class="w-10 h-10 object-cover shrink-0 aspect-square bg-white rounded-xl shadow border border-[#DDA15E]/30" />
           <div>
             <h2 class="font-heading font-extrabold text-xl text-white leading-tight tracking-tight">VAULTA</h2>
             <p class="text-[10px] text-[#E9EDC9]/70 font-bold tracking-widest uppercase">Financial Control</p>
